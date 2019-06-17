@@ -12,3 +12,5 @@ def count(requset):
             result[i]+=1
     result = sorted(result.items(),key=lambda x:x[1], reverse=True)
     return render(requset, 'count.html',{'count_result':result})
+def about(request):
+    return render(request,'about.html')
